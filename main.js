@@ -8,6 +8,9 @@
 
 var posts = [];
 
+
+
+
 var createNewPost = function(text){
   var newPost = {
     text: text, 
@@ -18,15 +21,15 @@ var createNewPost = function(text){
   if(posts.length === 0){
     newPost.id = 0;
   } else {
-    var lastId = posts[posts.length - 1].id 
-    newPost.id = lastId + 1
+    var nextId = posts[posts.length - 1].id 
+    newPost.id = nextd + 1
     
   }
   posts.push(newPost);
 }
 
 //add from array to html
-var addPost= function()  {
+var addPost = function()  {
 
     //empty the div of all of its contents
     $('.posts').empty();
