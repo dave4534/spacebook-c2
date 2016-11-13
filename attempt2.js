@@ -14,14 +14,14 @@ var posts = [
 var createNewPost = function(text){
   var idMaker = function (){
     return posts.length;
-  }
+  };
   var newPost = {
     text: text,
     id: idMaker(),
     commentsArray: []
-  }
+  };
   posts.push(newPost);
-}
+};
 
 
 //add post array objects to div
